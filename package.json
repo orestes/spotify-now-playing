@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
     "deploy": "firebase deploy --only hosting",
-    "pum": "yarn build:prod && yarn deploy",
+    "pum": "yarn build && yarn deploy",
+    "serve": "cd dist/now-playing && httpster",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
