@@ -122,8 +122,13 @@
               "devServerTarget": "now-playing:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "now-playing"
 }

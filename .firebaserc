@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spotify-watcher-185e9": {
+      "hosting": {
+        "now-playing": [
+          "spotify-watcher-185e9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spotify-watcher-185e9"
+  }
+}
