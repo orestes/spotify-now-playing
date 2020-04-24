@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 import {Config} from '../config';
-import firebase from '../../firebase-credentials';
+import * as firebase from '../../firebase-credentials.js';
 
 export const environment: Config = {
   production: false,
