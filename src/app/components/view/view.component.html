@@ -1,0 +1,6 @@
+<main *ngIf="playing$ | async as music">
+  <img [src]="music.cover" alt="">
+  <span class="artist">{{ music.artist }}</span>
+  <span>—</span>
+  <span class="song">{{ music.song }}</span>
+</main>

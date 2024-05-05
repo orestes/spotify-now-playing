@@ -8,6 +8,15 @@ import { RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 
 import {environment} from '../environments/environment';
+import {RouterModule, Routes} from "@angular/router";
+import { ViewComponent } from './components/view/view.component';
+
+const routes: Routes = [
+  {
+    path: 'view/:id',
+    component: ViewComponent,
+  }
+];
 
 import { NowPlayingComponent } from './components/now-playing/now-playing.component';
 
@@ -22,13 +31,14 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NowPlayingComponent
+    NowPlayingComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
